@@ -2,7 +2,7 @@ import axios from 'axios'
 import { Article, ArticleMeta, SignedFileUrls, UnsignedUrl } from './types'
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://sorcererxw.com'
+  ? 'https://notion-blog.herokuapp.com'
   : 'http://localhost:3000'
 
 async function post<T>(url: string, data: any): Promise<T> {
